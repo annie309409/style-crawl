@@ -1,0 +1,26 @@
+{
+  "name": "style-crawl",
+  "version": "1.0.0",
+  "description": "Package to find style links from the site you want",
+  "main": "index.js",
+  "scripts": {
+    "find-style": "node ./node_modules/style-crawl/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annie309409/style-crawl.git"
+  },
+  "keywords": [
+    "crawling",
+    "style"
+  ],
+  "author": "annie <anniep309409@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/annie309409/style-crawl/issues"
+  },
+  "homepage": "https://github.com/annie309409/style-crawl#readme",
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
