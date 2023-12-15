@@ -1,0 +1,43 @@
+http://www.jobkorea.co.kr스타일 목록(Lists of styles follow)
+----------------------------------------------------------------------------------------------------
+//i.jobkorea.kr/deploy/pc/dist/css/personal/common/gnb-sv-202311301113.css
+//i.jobkorea.kr/deploy/pc/dist/css/personal/components/banner_promotion-sv-202306261612.css
+//i.jobkorea.kr/deploy/pc/dist/css/personal/components/notification-sv-202304070431.css
+//i.jobkorea.kr/deploy/pc/dist/css/personal/layout/footer-sv-202311301113.css
+//i.jobkorea.kr/deploy/pc/dist/css/personal/pages/main/banner-sv-202309011650.css
+https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css
+//i.jobkorea.kr/deploy/pc/dist/css/personal/pages/main/main-sv-202312121502.css
+//i.jobkorea.kr/deploy/pc/dist/css/mtu/mtu_popup-sv-202311301113.css
+https://i.jobkorea.kr/content/css/join/flow/flow.css
+https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css
+
+
+http://www.jobkorea.co.kr추천검색 리스트 (Recommanded:Search the following lists for rigt ones)
+----------------------------------------------------------------------------------------------------
+https://www.jobkorea.co.kr/Main/_OneShotSearch
+https://www.jobkorea.co.kr/HeadHunting/Request/WriteM
+https://yellow.contentsfeed.com/RealMedia/ads/adstream_sx.ads/jobkorea/main@x01
+https://yellow.contentsfeed.com/RealMedia/ads/adstream_sx.ads/jobkorea/main@Top
+https://yellow.contentsfeed.com/RealMedia/ads/adstream_sx.ads/jobkorea/main@Right
+https://yellow.contentsfeed.com/RealMedia/ads/adstream_sx.ads/jobkorea/main@Middle1
+https://yellow.contentsfeed.com/RealMedia/ads/adstream_sx.ads/jobkorea/main@Middle2
+https://yellow.contentsfeed.com/RealMedia/ads/adstream_sx.ads/jobkorea/main@Middle3
+https://yellow.contentsfeed.com/RealMedia/ads/adstream_sx.ads/jobkorea/main@Middle
+
+
+http://www.naver.com스타일 목록(Lists of styles follow)
+----------------------------------------------------------------------------------------------------
+https://ssl.pstatic.net/sstatic/search/pc/css/sp_autocomplete_231130.css
+https://pm.pstatic.net/resources/css/main.2075e752.css
+
+
+http://www.hanbit.co.kr스타일 목록(Lists of styles follow)
+----------------------------------------------------------------------------------------------------
+/css/hover.css
+/js/jquery.raty.css
+/css/layout-member.css
+/css/layout-network.css
+/css/layout-myhanbit.css
+/css/layout-event.css
+
+
