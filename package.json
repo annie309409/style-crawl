@@ -1,10 +1,11 @@
 {
   "name": "style-crawl",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Package to find style links from the site you want",
   "main": "index.js",
   "scripts": {
-    "postinstall":"node ./msg.js"
+    "postinstall":"node ./msg.js",
+    "posti":"node ./msg.js"
   },
   "repository": {
     "type": "git",
