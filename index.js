@@ -29,13 +29,25 @@ async function main(){
             final += '\n\n'
         ):'';
 
+        await final.length>0?(
+            fs.appendFileSync('./style-results.txt',await final),
+            console.log('╭➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮'),
+            console.log(' ./style-results.txt 에 검색결과가 추가되었습니다.  '),
+            console.log(' 　　　　　　　　　　　　　　　                      '),
+            console.log(' Style lists have been added to ./style-results.txt '),
+            console.log('╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡╯')
+        ):
+        (
+            console.log('╭➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮'),
+            console.log('  사이트에서 스타일 탐색이 불가능합니다.'),
+            console.log(' '),
+            console.log('  Style lists are not found in this site'),
+            console.log('╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡╯')
+        )
+        
+
         rl.close();
-        fs.appendFileSync('./style-results.txt',await final);
-        console.log('╭➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮');
-        console.log(' ./style-results.txt 에 검색결과가 추가되었습니다.  ');
-        console.log(' 　　　　　　　　　　　　　　　                      ');
-        console.log(' Style lists have been added to ./style-results.txt ');
-        console.log('╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡╯');
+       
     });
 }
 main();
