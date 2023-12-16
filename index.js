@@ -14,8 +14,8 @@ async function main(){
         const dts = html.data.split('>');
         let sitename  = url.slice(url.indexOf('www.')+4);
         sitename = sitename.slice(0,sitename.indexOf('.'));
-        let fnDt = dts.filter(f=> f.includes('<link') && f.includes('style')).map(m=>`${m.slice(m.indexOf('href="')+6,m.indexOf('.css"')+4)}\n`).filter(f=>f.trim()!='');
-        let addDt = dts.filter(f=> f.includes('iframe') && f.includes(sitename)).map(m=> m.slice(m.indexOf('http'))).map(m=>`${m.slice(0,m.indexOf('"'))}\n`).filter(f=>f.trim()!='');
+        let fnDt = dts.filter(f=> f.includes('<link') && f.includes('style')).map(m=>`${m.slice(m.indexOf('href="')+6,m.indexOf('.css"')+4)}\n`).filter(f=>f.trim()!='').map((m,i)=>`${i+1}. ${m}`);
+        let addDt = dts.filter(f=> f.includes('iframe') && f.includes(sitename)).map(m=> m.slice(m.indexOf('http'))).map(m=>`${m.slice(0,m.indexOf('"'))}\n`).filter(f=>f.trim()!='').map((m,i)=>`${i+1}. ${m}`);
         fnDt.length>0?(
             final += `${url}스타일 목록(Lists of styles follow)\n`,
             final += '-'.repeat(100)+'\n',
@@ -30,8 +30,12 @@ async function main(){
         ):'';
 
         rl.close();
-        fs.appendFileSync('./style-results.txt',await final,(e,dt)=>{ 
-            !e ? console.log(`./style-results.txt에 스타일목록이 추가되었습니다.`):console.log('파일을 덮어쓰는데 문제가 발생했습니다.') });
+        fs.appendFileSync('./style-results.txt',await final);
+        console.log('╭➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮');
+        console.log(' ./style-results.txt 에 검색결과가 추가되었습니다.  ');
+        console.log(' 　　　　　　　　　　　　　　　                      ');
+        console.log(' Style lists have been added to ./style-results.txt ');
+        console.log('╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈➳♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡⃘♡╯');
     });
 }
 main();
